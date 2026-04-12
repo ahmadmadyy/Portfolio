@@ -134,7 +134,7 @@ const P = [
     t: "Pick-and-Place Robot (Embedded)",
     d: "4-DOF manipulator with embedded C++, servo control, Bluetooth, USART, I2C OLED.",
     img: "https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif",
-    video: "videos/embedded_robot.mp4",
+    video: "videos/Embedded_robot.mp4",
     gh: "https://github.com/ahmadmadyy/Pick-n-Place-Robot",
     tags: ["Embedded C++", "Servos", "Bluetooth"],
     r: "Personal Project",
