@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Portfolio Server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import os, http.server, socketserver; os.chdir('/Users/ahmedmady/Library/Mobile Documents/com~apple~CloudDocs/Portfolio'); s=socketserver.TCPServer(('127.0.0.1',8000),http.server.SimpleHTTPRequestHandler); print('Server on http://127.0.0.1:8000'); s.serve_forever()"],
+      "port": 8000
+    }
+  ]
+}

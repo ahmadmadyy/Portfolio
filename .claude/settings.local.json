@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{content_type}\" \"http://localhost:8001/certifications/mckinsey-forward.png\")",
+      "Bash(lsof -ti:8001)",
+      "Bash(xargs kill -9)"
+    ]
+  }
+}

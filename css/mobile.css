@@ -1,0 +1,266 @@
+/* ═══════════════════════════════════════════════
+   mobile.css — overrides for small screens
+   Loaded after styles.css — does NOT modify it
+   ═══════════════════════════════════════════════ */
+
+/* ── General ── */
+@media (max-width: 768px) {
+  html { font-size: 15px }
+
+  section { padding: 3.5rem 1.25rem }
+
+  .sl { font-size: .7rem; letter-spacing: 2px }
+
+  .st { font-size: clamp(1.6rem, 6vw, 2.2rem); margin-bottom: 1.5rem }
+}
+
+/* ── Nav ── */
+@media (max-width: 768px) {
+  nav { padding: .85rem 1.25rem }
+
+  .nav-logo { font-size: 1rem }
+}
+
+/* ── Hero ── */
+@media (max-width: 768px) {
+  /* Orbit dot sits above the avatar; avoid clipping from overflow:hidden */
+  #hero {
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-top: 4.5rem;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .hero-visual {
+    padding-top: 14px;
+    margin-top: 2px;
+    overflow: visible;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: -1px;
+  }
+
+  .tagline { font-size: .82rem; line-height: 1.9 }
+
+  .hero-avatar { width: 160px; height: 160px }
+
+  .hero-orbit { width: 215px; height: 215px }
+
+  .hero-cta { flex-direction: column; gap: .75rem; align-items: center }
+
+  .btn { width: 100%; max-width: 280px; justify-content: center }
+}
+
+/* ── About ── */
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem }
+
+  .edu-grid { grid-template-columns: 1fr; gap: 1rem }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem }
+
+  .stat { padding: 1rem }
+
+  .stat .num { font-size: 1.5rem }
+
+  /* gif-cards: show them but more compact */
+  .about-vis { display: flex; flex-direction: column; gap: 1rem }
+
+  .gif-card img,
+  .gif-card video { height: 150px }
+}
+
+/* ── Experience / Timeline ── */
+@media (max-width: 768px) {
+  .timeline { padding-left: 1.75rem }
+
+  .ti {
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .ti::before {
+    left: -1.75rem;
+    top: 1.5rem;
+    width: 10px;
+    height: 10px;
+    transform: translateX(-4px);
+  }
+
+  .ch { gap: .75rem }
+
+  .cl-logo { width: 36px; height: 36px }
+
+  .ti .co { font-size: 1rem }
+
+  .ti .role { font-size: .78rem }
+
+  .tt { gap: .35rem }
+
+  .tag { font-size: .6rem }
+}
+
+/* ── Skills ── */
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; gap: 1rem }
+
+  .sk { padding: 1.5rem }
+}
+
+/* ── Banner ── */
+@media (max-width: 768px) {
+  .gbanner { grid-template-columns: repeat(2, 1fr) }
+
+  .gbi { height: 140px }
+}
+
+@media (max-width: 480px) {
+  .gbanner { grid-template-columns: 1fr 1fr }
+
+  .gbi { height: 120px }
+
+  .gbi .gbl { font-size: .65rem }
+}
+
+/* ── Projects grid ── */
+@media (max-width: 768px) {
+  .pg { grid-template-columns: 1fr; gap: 1.25rem }
+
+  .pi { padding: 1.1rem }
+
+  .pi h3 { font-size: 1rem }
+}
+
+/* ── Project / Cert / Blog modal ── */
+@media (max-width: 768px) {
+  /* Slide up from bottom, full-width sheet */
+  .pdo {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .pdd {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    max-height: 92vh;
+    overflow-y: auto;
+    /* smooth momentum scroll on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* video area: keep 16/9 but cap at 45vw tall so content shows */
+  .dvid {
+    aspect-ratio: unset;
+    height: clamp(180px, 45vw, 260px);
+  }
+
+  .dvid img,
+  .dvid video { height: 100%; object-fit: cover }
+
+  /* body padding tighter */
+  .dbody { padding: 1.5rem 1.25rem }
+
+  .dbody h2 { font-size: 1.3rem; line-height: 1.3 }
+
+  .dbody .dr { font-size: .78rem; margin-bottom: 1rem }
+
+  .dbody .ddes { font-size: .9rem; margin-bottom: 1.5rem }
+
+  .dbody .dft { margin-bottom: 1.25rem }
+
+  /* close button: always visible at top-right */
+  .dclose {
+    position: fixed;
+    top: calc(8vh + .5rem);
+    right: .75rem;
+    background: var(--card);
+    border-color: var(--bdr);
+    z-index: 2100;
+  }
+
+  /* GitHub / Verify button: full width */
+  .ghl {
+    width: 100%;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  /* blog gallery: 2 cols on mobile */
+  .blog-gallery { grid-template-columns: repeat(2, 1fr); gap: .5rem }
+
+  /* tags wrap nicely */
+  .badge { font-size: .65rem; padding: .3rem .65rem }
+}
+
+/* ── Certifications ── */
+@media (max-width: 768px) {
+  .cert-grid { grid-template-columns: 1fr; gap: 1rem }
+
+  .cert-img { height: 150px }
+
+  .cert-img.badge img { height: 130px }
+
+  .cert-body { padding: 1.1rem }
+
+  .cert-name { font-size: .92rem }
+}
+
+/* ── Blog ── */
+@media (max-width: 768px) {
+  .bg { grid-template-columns: 1fr; gap: 1.25rem }
+
+  .bt { height: 180px }
+
+  .bb { padding: 1.1rem }
+
+  .bb h3 { font-size: .98rem }
+}
+
+/* ── Contact ── */
+@media (max-width: 768px) {
+  .clinks {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .85rem;
+    max-width: 360px;
+    margin: 1.5rem auto 0;
+  }
+
+  .clink {
+    justify-content: center;
+    padding: .9rem 1.5rem;
+    font-size: .8rem;
+  }
+}
+
+/* ── Footer ── */
+@media (max-width: 768px) {
+  footer { font-size: .68rem; padding: 1.5rem 1.25rem }
+}
+
+/* ── Lightbox ── */
+@media (max-width: 768px) {
+  #imgLbImg {
+    max-width: 96vw;
+    max-height: 80vh;
+    border-radius: 6px;
+  }
+}
+
+/* ── Very small phones (≤ 390px) ── */
+@media (max-width: 390px) {
+  .hero-text h1 { font-size: 1.85rem }
+
+  .hero-avatar { width: 130px; height: 130px }
+
+  .hero-orbit { width: 175px; height: 175px }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr) }
+
+  .dbody h2 { font-size: 1.15rem }
+}
