@@ -262,6 +262,18 @@ const CERTS = [
 // ─────────────────────────────────────────────
 const BLOGS = [
   {
+    t: "Master's Thesis Defense – Multimodal Reasoning for Robotic Manipulation",
+    dt: "FAU FAPS · Fraunhofer IGCV",
+    img: "pictures/def_1.jpeg",
+    gallery: [
+      "pictures/def_1.jpeg",
+      "pictures/def_2.jpeg",
+      "pictures/def_3.jpeg"
+    ],
+    tags: ["Physical AI", "LLM", "Robotics", "Isaac Sim", "MoveIt 2"],
+    content: `<p>I'm thrilled to share that I have successfully defended my Master's thesis at the <strong>FAU FAPS Institute</strong> in cooperation with <strong>Fraunhofer IGCV</strong>!</p><p>The thesis, titled <em>"Exploration of Multimodal Reasoning and Explainability for Robotic Manipulation in Physical AI"</em>, presents a complete language-to-motion pipeline that converts natural language instructions into executable actions for a UR5 robot — bridging the gap between high-level human intent and low-level robotic execution.</p><p><strong>Key Technical Contributions:</strong></p><ul style="margin:1rem 0 1rem 1.5rem;color:var(--t2);line-height:2"><li>NVIDIA Cosmos LLM for task planning directly from natural language text</li><li>Text-to-waypoint pipeline generating structured, executable robot trajectories</li><li>UR5 pick-and-place and screwing tasks implemented in NVIDIA Isaac Sim</li><li>MoveIt 2 for motion planning and real-time collision avoidance</li><li>Comparative evaluation against reinforcement learning baselines using LLM-based assessment</li></ul><p>This work explores how large multimodal models can serve as task planners in physical AI systems, enabling robots to interpret and act on unstructured language commands in simulation environments. The pipeline demonstrated promising results in both manipulation accuracy and task generalization.</p><p>I'm deeply grateful to my supervisors at FAU FAPS and Fraunhofer IGCV for their guidance and support throughout this journey. This thesis marks an exciting milestone and I look forward to continuing research at the intersection of language models and robotic systems.</p>`
+  },
+  {
     t: "Master's Seminar: MPC for Multi-Agent Cooperative Vehicles",
     dt: "FAU Erlangen-Nürnberg",
     img: "pictures/seminar2.jpeg",
