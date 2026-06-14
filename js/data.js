@@ -268,6 +268,7 @@ const EXP = [
     logo: "logos/neura.jpg",
     start: "Jun 2026",
     end: "Present",
+    location: "Metzingen, Germany",
     desc: "Collected training data in the Neura Gym of the 4NE-1 humanoid robot performing household tasks (sorting clothes, loading/unloading washing machines and dryers) from tele-operation to train on using imitation learning for BSH client project.",
     bullets: [
       "Fine-tuned NVIDIA Isaac GR00T models using the recorded data to create a foundation perception-language-action (PLA) model.",
