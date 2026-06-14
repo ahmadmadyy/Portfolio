@@ -258,6 +258,37 @@ const CERTS = [
 ];
 
 // ─────────────────────────────────────────────
+//  Work Experience
+// ─────────────────────────────────────────────
+const EXP = [
+  {
+    company: "Neura Robotics",
+    role: "Robotics Engineer",
+    sub: "PoC Team for 4NE1 Humanoid Robot",
+    logo: "logos/neura.jpg",
+    start: "Jun 2026",
+    end: "Present",
+    desc: "Collected training data in the Neura Gym of the 4NE-1 humanoid robot performing household tasks (sorting clothes, loading/unloading washing machines and dryers) from tele-operation to train on using imitation learning for BSH client project.",
+    bullets: [
+      "Fine-tuned NVIDIA Isaac GR00T models using the recorded data to create a foundation perception-language-action (PLA) model.",
+      "Recorded tele-operation data in simulation using Apple Vision Pro within the Isaac Sim NeuraVerse environment, generating synthetic demonstrations for GR00T fine-tuning to replicate the simulated setup in hardware, bridging the sim-to-real gap for humanoid manipulation tasks."
+    ]
+  },
+  {
+    company: "Siemens AG",
+    role: "(Previous Role)",
+    start: "",
+    end: "May 2026"
+  },
+  {
+    company: "Fraunhofer IGCV",
+    role: "(Previous Role)",
+    start: "",
+    end: "May 2026"
+  }
+];
+
+// ─────────────────────────────────────────────
 //  Blog Posts
 // ─────────────────────────────────────────────
 const BLOGS = [
@@ -314,3 +345,4 @@ const BLOGS = [
     content: `<p>During my university studies, I worked on a project titled &quot;Bicopter Balancing,&quot; where I designed and implemented a vision-based control system to balance a bicopter beam using embedded hardware and feedback control. At the end of the project, I presented the work in front of my peers and professors, explaining the problem setup, hardware and software architecture, and the control strategies used to achieve stable balancing.</p><p>The goal of the project was to build a low-cost aero-mechatronic system that can balance a horizontal beam by actuating two BLDC motors based on real-time visual feedback. This setup demonstrates how embedded computation, computer vision, and control theory can be combined to solve a challenging nonlinear stabilization problem in practice.</p><p>The hardware consists of two BLDC motors driving a horizontal beam, each connected to an electronic speed controller (ESC) that interfaces with a Raspberry Pi 4. A USB webcam mounted in the setup provides continuous visual feedback of the beam, which is processed on the Raspberry Pi using Python and computer vision techniques to estimate the beam angle and deviation from the horizontal position.</p><p>On the software side, I implemented image processing pipelines in Python to detect the beam and extract its orientation from camera frames, then used this measurement as feedback in a closed-loop controller running on the Raspberry Pi. In the open-loop tests, I focused on validating the vision pipeline and understanding the system&rsquo;s dynamic response, while in the closed-loop phase I implemented and tuned a PID controller that adjusts motor speeds to minimize the beam angle error.</p><p>The repository includes the full hardware design in SolidWorks (all parts and assemblies), code for open-loop image processing experiments, and the closed-loop control implementation on the Raspberry Pi, as well as a detailed project report documenting the modeling, experiments, and results. Through this project I strengthened my understanding of feedback control, PID tuning, embedded Python development, computer vision for control, and practical mechatronic system integration, and the final presentation significantly improved my ability to explain control architectures and engineering trade-offs to a technical audience.</p>`
   }
 ];
+

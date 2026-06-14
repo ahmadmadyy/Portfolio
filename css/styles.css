@@ -182,7 +182,14 @@ section { position: relative; z-index: 1; padding: 6rem 2rem }
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -2px;
+  margin-bottom: .75rem;
+}
+.hero-location {
+  font-family: var(--mono);
+  font-size: .9rem;
+  color: var(--t2);
   margin-bottom: 1.5rem;
+  letter-spacing: .02em;
 }
 .hl {
   background: linear-gradient(135deg, var(--accent), var(--blue));
@@ -259,7 +266,12 @@ section { position: relative; z-index: 1; padding: 6rem 2rem }
   background: var(--card);
   box-shadow: 0 0 60px var(--ad), inset 0 0 30px rgba(0, 0, 0, .3);
 }
-.hero-avatar img { width: 100%; height: 100%; object-fit: cover }
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
 .hero-orbit {
   position: absolute;
   width: 380px;
